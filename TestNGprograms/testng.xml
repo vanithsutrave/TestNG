@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- <suite name="TestNgSuite"> -->
+<!-- 	<test name="PNTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.test.PrimeNumberTest"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="LETest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.test.LargestElementTest"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- </suite> -->
+
+<suite name="TestNg1Suite">
+	<test name="PTest">
+		<groups>
+			<define name="all">
+				<include name="checkTest"></include>
+				<include name="funcTest"></include>
+				<run>
+					<include name="all"></include>
+				</run>
+			</define>
+		</groups>
+		<classes>
+			<class name="com.test.PalindromeTest"></class>
+		</classes>
+	</test>
+</suite>
+
+
+
+
+
+
+
+
